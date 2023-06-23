@@ -1,0 +1,12 @@
+.navlink {
+    color: #FFF;
+    text-decoration: none;
+}
+.navlink.active  .nav_link_btn{
+    border-bottom: 2px solid #fff8f8;
+}
+
+.navlink .nav_link_btn {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
