@@ -8,7 +8,6 @@ import Register from 'pages/Register';
 import { Box, CircularProgress } from '@mui/material';
 import ResetPassword from 'pages/ResetPassword';
 import Home from 'pages/Home';
-import Dashboard from 'pages/Admin/Dashboard/Dashboard';
 
 const Cart = () => <div>Cart</div>;
 const About = () => <div>About</div>;
@@ -28,10 +27,9 @@ const AppRoutes = () => {
               </Box>
             ) : (
               <Routes>
-                  <Route exact path="/" element={<ProtectedRoute isAuthenticated={isAuth} rolesIds={[1, 2]}><Home /></ProtectedRoute>} />
-                  <Route path="/cart" element={<ProtectedRoute isAuthenticated={isAuth} rolesIds={[1]}><Cart /></ProtectedRoute>} />
-                  <Route path="/about" element={<ProtectedRoute isAuthenticated={isAuth} rolesIds={[2]}><About /></ProtectedRoute>} />
-                  <Route path="/dashboard" element={<ProtectedRoute isAuthenticated={isAuth} rolesIds={[2]}><Dashboard /></ProtectedRoute>} />
+                  <Route exact path="/" element={<ProtectedRoute isAuthenticated={isAuth} userRoleId={user?.roleId} rolesIds={[1, 2]}><Home /></ProtectedRoute>} />
+                  <Route path="/cart" element={<ProtectedRoute isAuthenticated={isAuth} userRoleId={user?.roleId} rolesIds={[1]}><Cart /></ProtectedRoute>} />
+                  <Route path="/about" element={<ProtectedRoute isAuthenticated={isAuth} userRoleId={user?.roleId} rolesIds={[2]}><About /></ProtectedRoute>} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/reset-password" element={<ResetPassword />} />
