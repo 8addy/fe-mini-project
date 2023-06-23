@@ -1,0 +1,12 @@
+.articles_container {
+    margin: 56px 0;
+}
+
+.articles_container .articles_container_toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.articles_container .articles_container_toolbar .clear_search {
+    cursor: pointer;
+}

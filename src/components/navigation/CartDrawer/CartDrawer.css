@@ -1,0 +1,96 @@
+.drawer_header  {
+    background-color: #fff;
+    box-shadow: 0px 3px 7px -5px;
+}
+.drawer_header .left_header {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 15px;
+}
+.drawer_header .right_header{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    border-left: 1px solid #d2d2d2;
+}
+
+.cart_article:not(:last-child) {
+    border-bottom: 1px solid #c3c3c3;
+}
+.cart_article_image_container {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.cart_article_image_container  > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cart_article_image_container .cart_delete_icon  {
+    position: absolute;
+    background: #777;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    left: -15px;
+    top: -15px;
+    cursor: pointer;
+}
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover {
+    background-color: #777;
+}
+
+.drawer_body {
+    margin-top: 20px;
+}
+
+.cart_article_details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.drawer_footer {
+    background: #FFF;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.quantity_updater {
+    display: flex;
+    align-items: center;
+}
+.quantity_updater > svg {
+    background: #0671f0;
+    color: #FFF;
+    margin: 0 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.quantity_updater > svg:hover {
+    opacity: 0.7;
+}
+.quantity_updater .quantity {
+    background: #FFF;
+    padding: 2px 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+}
+.quantity_updater .cart_icon.cart_icon_disable {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
