@@ -67,7 +67,6 @@ const Navigation = (props) => {
                 <>
                   <Box sx={{ flexGrow: 1 }} />
                   <NavLinkBtn label="Home" path="/" />
-                  {roleId === ADMIN_ROLE_ID && ( <NavLinkBtn label="Dashboard" path="/dashboard" />)}
                   <NavLinkBtn label="About" path="/about" />
                   <Divider orientation="vertical" flexItem sx={{ background: '#6aa3ea' }} />
                   <Button sx={{ mr: 2, ml: 4 }} endIcon={<SearchIcon />} color="inherit" onClick={searchModalHandler}>Search</Button>
